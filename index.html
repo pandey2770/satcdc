@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Satdiagnostic</title>
+    <script src="lib/jquery-3.0.0.min.js"></script>
+    <link href="css/main.css?1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logonew.png" sizes="100*100" />
+  </head>
+  <body>
+    <header class="header" id="logo-first">
+      <div class="heading-logo">
+        <span>
+          <a href="index.html"><img src="img/logo.png" class="header-logo"/></a>
+        </span>
+        <span>
+          <h1 class="main-heading">
+            <a href="index.html" class="main-heading-color"> Shri Anandpur Trust Charitable Diagnostic Center</a>
+          </h1>
+        </span>
+      </div>
+    </header>
+    <div class="menu">
+      <a href="index.html.html" class="link">Home</a>
+      <a href="facilities.html"class="link">Facilities</a>
+      <a href="contact.html"class="link">Contact Us</a>
+    </div>
+    <span>
+      <h2 class="heading-shri">SHRI SATGURU DEVAI NAMAH</h2>
+    </span>
+    <div>
+      <button onclick="button(1)" class="button">&#10094;</button>
+     <div class="slideshow"> 
+       <h2 class="heading">About Us </h2>
+      <div class="show-div"> <img src="img/bb.jpg" style="width:50%">
+       <p class="prag"> Shri Anandpur Trust, established in 1954, is located at P.O.Shri Anandpur near Esagarh, Distt.
+        Ashoknagar (MP), is an embodiment of spirituality, social services, truth and love and it adorns
+        the State of Madhya Pradesh by its precious higher ideals taught by our Rishis of ancient past.
+        All these activities are in furtherance of the mission of Shri Paramhans Advait Mat for bestowing
+        peace, love and joy in the lives of suffering humanity through thousands of Sadhus, Sanyasis and
+        selfless workers
+       </p>
+    </div>
+    </div>
+     <div class="slideshow">
+       <h2 class="heading">Mission</h2>
+      <div class="show-div"><img src="img/3.jpg" style="width:50%">
+       <p class="prag"> Shri Anandpur Trust, established in 1954, is located at P.O.Shri Anandpur near Esagarh, Distt.
+      Ashoknagar (MP), is an embodiment of spirituality, social services, truth and love and it adorns
+      the State of Madhya Pradesh by its precious higher ideals taught by our Rishis of ancient past.
+      All these activities are in furtherance of the mission of Shri Paramhans Advait Mat for bestowing
+      peace, love and joy in the lives of suffering humanity through thousands of Sadhus, Sanyasis and
+      selfless workers Shri Anandpur Trust, established in 1954, is located at P.O.Shri Anandpur near Esagarh, Distt.
+      Ashoknagar (MP), is an embodiment of spirituality, social services, truth and love and it adorns
+      the State of Madhya Pradesh by its precious higher ideals taught by our Rishis of ancient past.
+      All these activities are in furtherance of the mission of Shri Paramhans Advait Mat for bestowing
+      peace, love and joy in the lives of suffering humanity through thousands of Sadhus, Sanyasis and
+      selfless workers
+       </p>
+    </div>
+    </div>
+     <div class="slideshow"> 
+       <h2 class="heading">History</h2>
+       <div class="show-div"><img src="img/aaaa.jpg" style="width:50%">
+       <p class="prag"> Shri Anandpur Trust, established in 1954, is located at P.O.Shri Anandpur near Esagarh, Distt.
+      Ashoknagar (MP), is an embodiment of spirituality, social services, truth and love and it adorns
+      the State of Madhya Pradesh by its precious higher ideals taught by our Rishis of ancient past.
+      All these activities are in furtherance of the mission of Shri Paramhans Advait Mat for bestowing
+      peace, love and joy in the lives of suffering humanity through thousands of Sadhus, Sanyasis and
+      selfless workers Shri Anandpur Trust, established in 1954, is located at P.O.Shri Anandpur near Esagarh, Distt.
+      Ashoknagar (MP), is an embodiment of spirituality, social services, truth and love and it adorns
+      the State of Madhya Pradesh by its precious higher ideals taught by our Rishis of ancient past.
+      All these activities are in furtherance of the mission of Shri Paramhans Advait Mat for bestowing
+      peace, love and joy in the lives of suffering humanity through thousands of Sadhus, Sanyasis and
+      selfless workers.
+       </p> 
+    </div>
+    </div>
+      <button onclick="-button(-1)" class="button">&#10095;</button>
+    </div>
+      </body>
+      <script>
+        var slide = 1;
+        showDivs(slide);
+        function button(n){
+          showDivs (slide +=n);
+        }
+        function showDivs(n){
+          var i;
+          var x = document.getElementsByClassName("slideshow");
+          if ( n > x.length ) {
+              slide = 1
+          }
+          if ( n < 1) { slide = x.length}
+          for ( i = 0; i < x.length; i++ ) {
+            x[i].style.display = "none";
+          }
+          x[slide-1].style.display="block";
+        }
+        </script>
+</html>

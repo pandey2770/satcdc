@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(to top, #E4EBF2,white);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.header-logo {
+  width: 100px;
+  margin: 25px;
+}
+.main-heading {
+  width: 60%;
+  margin-top: 30px;
+}
+.main-heading-color {
+  text-decoration: none;
+}
+.heading-logo {
+  display: flex;
+}
+.header {
+  width: 101%;
+  margin-top: -20px;
+  margin-left: -5px;
+  background-color: white;
+}
+.menu {
+  margin: 15px;
+}
+.menu-section {
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.heading-shri {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 400;
+  text-align: center;
+}
+.show-div {
+  text-align: -webkit-center;
+}
+.prag {
+  width: 75%;
+  font-size: x-large;
+}
+.heading {
+  font-size: x-large;
+  font-weight: 400;
+  margin-left: 50px;
+}
+.link {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: navy;
+}
+.contact-image {
+  text-align: center;
+  margin: 75px;
+}
+.content {
+  text-align: center;
+  font-size: x-large;
+}
+.line-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.floralwhite-line {
+  background: floralwhite;
+  border: 1px solid floralwhite;
+  width: 50%;
+}
+.contact-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.feedback{
+  display: flex;
+  justify-content: space-around;
+}
+.input{
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: larger;
+}
+.subject{
+  font-size: larger;
+  width: 150%;
+  margin-bottom: 15px;
+}
+.message{
+  font-size: larger;
+  height: 55%;
+  width: 150%;
+}
+.button{
+  position: absolute;
+}
+.thanku{
+  text-align: center;
+  font-weight: 400;
+  visibility: hidden;
+}
+.slideshow {
+  -webkit-transition: left 0.15s ease-out;
+48
+  transition: left 0.15s ease-out;
+49
+  -webkit-transform: translate3d(0, 0, 0);
+50
+  transform: translate3d(0, 0, 0);
+
+}
