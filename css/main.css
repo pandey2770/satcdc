@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(to top, #E4EBF2,white);
   font-family: 'Josefin Sans', sans-serif;
+  color: navy;
 }
 .header-logo {
   width: 100px;
