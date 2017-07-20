@@ -12,6 +12,7 @@ body {
 }
 .main-heading-color {
   text-decoration: none;
+  color: navy;
 }
 .heading-logo {
   display: flex;
