@@ -23,30 +23,56 @@
     </header>
     <div class="menu">
       <a href="index.html" class="link">Home</a>
-      <a href="facilities.html"class="link">Facilities</a>
+      <a href="facilities.html"class="button-menu link pulse">Facilities</a>
       <a href="contact.html"class="link">Contact Us</a>
     </div>
-    <h2 style="margin: 50px;">
+    <div id="cardio-bg">
+    <h2 style="margin: 50px;" class="button-menu pulse">
       CARDIOLOGY
     </h2>
     <div class="margin">
     <div class="facilities-flex">
-      <div class="facilities-div-dark">
+      <div class="facilities-div-dark"  onmouseenter="change()" onmouseleave="change2()"  id="dopler">
         <h3 class="facilities-text">DOPLER</h3>
       </div>
-      <div class="facilities-div-light">
+      <div class="facilities-div-light"  id="echo">
        <h3 class="facilities-text">ECHO</h3>
       </div>
-      <div class="facilities-div-dark">
+      <div class="facilities-div-dark"  id="ecg">
         <h3 class="facilities-text">ECG</h3>
       </div>
     </div>
     <div class="cardio-flex">
-      <div class="facilities-div-light">
+      <div class="facilities-div-light"  id="stress">
         <h3 class="facilities-text">STRESS ECHO</h3>
       </div>
-      <div class="facilities-div-dark">
+      <div class="facilities-div-dark"  id="tmt">
         <h3 class="facilities-text">TMT</h3>
       </div>
     </div>
     </div>
+    </div>
+  </body>
+  <script>
+    function change(){
+      document.getElementById('cardio-bg').style.backgroundImage = "url('asd.png')";
+      document.getElementById('echo').style.visibility = "hidden";
+      document.getElementById('ecg').style.visibility = "hidden";
+      document.getElementById('stress').style.visibility = "hidden";
+      document.getElementById('tmt').style.visibility = "hidden";
+      document.getElementById('dopler').style.backgroundColor = "transparent";
+      document.getElementById('dopler').style.color = "navy";
+      document.getElementById('dopler').style.fontSize="-webkit-xxx-large";
+    }
+    function change2(){
+      document.getElementById('cardio-bg').style.backgroundImage = null;
+      document.getElementById('echo').style.visibility = "visible";
+      document.getElementById('ecg').style.visibility = "visible";
+      document.getElementById('stress').style.visibility = "visible";
+      document.getElementById('tmt').style.visibility = "visible";
+      document.getElementById('dopler').style.backgroundColor = "#656dad";
+      document.getElementById('dopler').style.color = "#E4EBF2";
+      document.getElementById('dopler').style.fontSize="x-large";
+    }
+    </script>
+</html>

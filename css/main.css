@@ -78,6 +78,9 @@ body {
 .contact-heading {
   text-align: center;
   margin-bottom: 50px;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: xx-large;
 }
 .feedback{
   display: flex;
@@ -135,7 +138,7 @@ body {
   font-size: x-large;
 }
 .margin {
-  margin: 150px;
+  margin: 100px;
 }
 .facilities-text {
   margin-top: 85px;
@@ -151,4 +154,37 @@ body {
 .cardio-flex {
   display: flex;
   justify-content: center;
+}
+.button-menu{ 
+	display: inline-block;      
+	width: 130px; 
+	padding: 5px; 
+	text-align: center; 
+	font-weight: bold;
+	text-decoration: none;
+}
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@media only screen and (max-width: 1000px) {
+  .content {
+    font-size: small;
+  }
+  .contact-heading {
+    font-size: small;
+  }
 }
