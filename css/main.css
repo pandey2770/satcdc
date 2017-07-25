@@ -140,3 +140,15 @@ body {
 .facilities-text {
   margin-top: 85px;
 }
+.link-light {
+  text-decoration: none;
+  color: #E4EBF2;
+}
+.link-dark {
+  text-decoration: none;
+  color: navy;
+}
+.cardio-flex {
+  display: flex;
+  justify-content: center;
+}
