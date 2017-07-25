@@ -1,6 +1,3 @@
-
-
-
 function send(event){
   $.ajax({
     url:'http://formspree.io/pandey.abhishek2770@gmail.com',

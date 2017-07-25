@@ -116,3 +116,27 @@ body {
   transform: translate3d(0, 0, 0);
 
 }
+.facilities-flex {
+  display: flex;
+}
+.facilities-div-light {
+  width: 35%;
+  background-color: #E4EBF2;
+  height: 200px;
+  text-align: center;
+  font-size: x-large; 
+}
+.facilities-div-dark {
+  width: 35%;
+  background-color: #656dad;
+  height: 200px;
+  text-align: center;
+  color: #E4EBF2;
+  font-size: x-large;
+}
+.margin {
+  margin: 150px;
+}
+.facilities-text {
+  margin-top: 85px;
+}
