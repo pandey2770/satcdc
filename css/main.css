@@ -129,6 +129,17 @@ body {
   text-align: center;
   font-size: x-large; 
 }
+.light {
+  background-color: #E4EBF2;
+}
+.dark {
+  width: 35%;
+  height: 200px;
+  text-align: center;
+  font-size: x-large;
+  color: #656dad;
+  background-color: #ffffff;
+}
 .facilities-div-dark {
   width: 35%;
   background-color: #656dad;
