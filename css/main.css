@@ -119,11 +119,23 @@ body {
   transform: translate3d(0, 0, 0);
 
 }
-.facilities-flex {
+.opd-flex {
   display: flex;
 }
-.facilities-div-light {
+.facilities-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.opd-div-light {
   width: 35%;
+  background-color: #E4EBF2;
+  height: 200px;
+  text-align: center;
+  font-size: x-large; 
+}
+.facilities-div-light {
+  width: 30%;
   background-color: #E4EBF2;
   height: 200px;
   text-align: center;
@@ -140,8 +152,16 @@ body {
   color: #656dad;
   background-color: #ffffff;
 }
+.opd-div-dark {
+  width: 30%;
+  background-color: #656dad;
+  height: 200px;
+  text-align: center;
+  color: #E4EBF2;
+  font-size: x-large;
+}
 .facilities-div-dark {
-  width: 35%;
+  width: 30%;
   background-color: #656dad;
   height: 200px;
   text-align: center;
