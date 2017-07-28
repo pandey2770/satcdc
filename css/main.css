@@ -88,21 +88,38 @@ body {
 }
 .input{
   margin-bottom: 20px;
-  width: 100%;
+  width: 75%;
   font-size: larger;
+  margin-left: 100px;
 }
 .subject{
   font-size: larger;
-  width: 150%;
+  width: 100%;
   margin-bottom: 15px;
+  margin-right: 112px;
+}
+.slide-img {
+  height: 100%;
+  width: 50%;
 }
 .message{
   font-size: larger;
   height: 55%;
-  width: 150%;
+  width: 100%;
+  margin-right: 112px;
 }
-.button{
+.button {
   position: absolute;
+}
+.button1 {
+  float: right;
+  margin-top: 250px;
+  width: 50px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  font-size: x-large;
+  outline: none;
 }
 .thanku{
   text-align: center;
@@ -121,6 +138,7 @@ body {
 }
 .opd-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .facilities-flex {
   display: flex;
@@ -128,14 +146,16 @@ body {
   justify-content: center;
 }
 .opd-div-light {
-  width: 35%;
+  width: 300px;
+  min-width: 25%;
   background-color: #E4EBF2;
   height: 200px;
   text-align: center;
   font-size: x-large; 
 }
 .facilities-div-light {
-  width: 30%;
+  width: 370px;
+  min-width: 30%;
   background-color: #E4EBF2;
   height: 200px;
   text-align: center;
@@ -145,7 +165,8 @@ body {
   background-color: #E4EBF2;
 }
 .dark {
-  width: 35%;
+  width: 300px;
+  min-width: 25%;
   height: 200px;
   text-align: center;
   font-size: x-large;
@@ -161,7 +182,8 @@ body {
   font-size: x-large;
 }
 .facilities-div-dark {
-  width: 30%;
+  width: 370px;
+  min-width: 30%;
   background-color: #656dad;
   height: 200px;
   text-align: center;
@@ -184,6 +206,7 @@ body {
 }
 .cardio-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .button-menu{ 
@@ -216,6 +239,13 @@ body {
 	transform-origin:70% 70%;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+}
+.cardio-heading {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: blanchedalmond;
+  display: none;
 }
 @media only screen and (max-width: 1000px) {
   .content {
