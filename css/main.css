@@ -159,7 +159,18 @@ body {
   background-color: #E4EBF2;
   height: 200px;
   text-align: center;
+  cursor: pointer;
   font-size: x-large; 
+}
+.button-cardio {
+  border: none;
+  display: none;
+  background: transparent;    
+  margin-top: 250px;
+  border: none;    
+  background: transparent;
+  font-size: -webkit-xxx-large;
+  outline: none;
 }
 .light {
   background-color: #E4EBF2;
@@ -189,6 +200,7 @@ body {
   text-align: center;
   color: #E4EBF2;
   font-size: x-large;
+  cursor: pointer;
 }
 .margin {
   margin: 100px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Satdiagnostic</title>
     <script src="lib/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link href="css/main.css?1" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logonew.png" sizes="100*100" />
@@ -27,105 +28,32 @@
       <a href="contact.html"class="link">Contact Us</a>
     </div>
     <div id="cardio-bg">
-    <h2 style="margin: 20px;" class="button-menu pulse">
-      CARDIOLOGY
-    </h2>
-    <h3 class="cardio-heading" id="dopler-h">DOPLER</h3>
-    <h3 class="cardio-heading" id="echo-h">ECHO</h3>
-    <h3 class="cardio-heading" id="ecg-h">ECG</h3>
-    <h3 class="cardio-heading" id="tmt-h">TMT</h3>
-    <div class="margin">
-    <div class="facilities-flex">
-      <div class="facilities-div-dark"  onmouseenter="change()" onmouseleave="change1()"  id="dopler">
-        <h3 class="facilities-text">DOPLER</h3>
-      </div>
-      <div class="facilities-div-light"  id="echo" onmouseenter="change2()" onmouseleave="change21()">
-       <h3 class="facilities-text">ECHO</h3>
-      </div>
-      <div class="facilities-div-dark"  id="ecg" onmouseenter="change3()" onmouseleave="change31()">
-        <h3 class="facilities-text">ECG</h3>
-      </div>
-    </div>
-    <div class="cardio-flex">
-      <div class="facilities-div-dark"  id="tmt" onmouseenter="change5()" onmouseleave="change51()">
-        <h3 class="facilities-text">TMT</h3>
-      </div>
-    </div>
-    </div>
+        <h2 style="margin: 20px;" class="button-menu pulse">
+          CARDIOLOGY
+        </h2>
+        <h3 class="cardio-heading" id="dopler-h">DOPLER</h3>
+        <h3 class="cardio-heading" id="echo-h">ECHO</h3>
+        <h3 class="cardio-heading" id="ecg-h">ECG</h3>
+        <h3 class="cardio-heading" id="tmt-h">TMT</h3>
+      <div class="margin">
+        <button onclick="changecheck()" id="button" class="button-cardio">< </button>
+          <div class="facilities-flex">
+            <div class="facilities-div-dark"  onclick="change()"id="dopler">
+              <h3 class="facilities-text">DOPLER</h3>
+            </div>
+            <div class="facilities-div-light"  id="echo" onclick="change2()">
+              <h3 class="facilities-text">ECHO</h3>
+            </div>
+            <div class="facilities-div-dark"  id="ecg" onclick="change3()" >
+              <h3 class="facilities-text">ECG</h3>
+            </div>
+          </div>
+          <div class="cardio-flex">
+            <div class="facilities-div-dark"  id="tmt" onclick="change5()">
+              <h3 class="facilities-text">TMT</h3>
+            </div>
+          </div>
+        </div>  
     </div>
   </body>
-  <script>
-    function change(){
-      document.getElementById('dopler').style.backgroundColor = "transparent";
-      document.getElementById('dopler').style.color = "transparent";
-      document.getElementById('echo').style.visibility = "hidden";
-      document.getElementById('ecg').style.visibility = "hidden";
-      document.getElementById('tmt').style.visibility = "hidden";
-      document.getElementById('cardio-bg').style.backgroundImage = "url('asd.png')";
-      document.getElementById('dopler-h').style.display = "block";
-    }
-    function change1(){
-      document.getElementById('cardio-bg').style.backgroundImage = null;
-      document.getElementById('dopler').style.backgroundColor = "#656dad";
-      document.getElementById('dopler').style.color = "#E4EBF2";
-      document.getElementById('echo').style.visibility = "visible";
-      document.getElementById('ecg').style.visibility = "visible";
-      document.getElementById('tmt').style.visibility = "visible";
-      document.getElementById('dopler-h').style.display = "none";
-    }
-    function change2(){
-      document.getElementById('cardio-bg').style.backgroundImage = "url('echo.png')";
-      document.getElementById('ecg').style.visibility = "hidden";
-      document.getElementById('tmt').style.visibility = "hidden";
-      document.getElementById('dopler').style.visibility = "hidden";
-      document.getElementById('echo').style.backgroundColor = "transparent";
-      document.getElementById('echo').style.color = "transparent";
-      document.getElementById('echo-h').style.display = "block";
-    }
-    function change21(){
-      document.getElementById('cardio-bg').style.backgroundImage = null;
-      document.getElementById('echo').style.backgroundColor = "background-color: #E4EBF2;";
-      document.getElementById('ecg').style.visibility = "visible";
-      document.getElementById('tmt').style.visibility = "visible";
-      document.getElementById('echo').style.color = "navy";
-      document.getElementById('dopler').style.visibility = "visible";
-      document.getElementById('echo-h').style.display = "none";
-    }
-    function change3(){
-      document.getElementById('cardio-bg').style.backgroundImage = "url('ecg.png')";
-      document.getElementById('echo').style.visibility = "hidden";
-      document.getElementById('dopler').style.visibility = "hidden";
-      document.getElementById('tmt').style.visibility = "hidden";
-      document.getElementById('ecg').style.backgroundColor = "transparent";
-      document.getElementById('ecg').style.color = "transparent";
-      document.getElementById('ecg-h').style.display = "block";
-    }
-    function change31(){
-      document.getElementById('cardio-bg').style.backgroundImage = null;
-      document.getElementById('echo').style.visibility = "visible";
-      document.getElementById('dopler').style.visibility = "visible";
-      document.getElementById('tmt').style.visibility = "visible";
-      document.getElementById('ecg').style.backgroundColor = "#656dad";
-      document.getElementById('ecg').style.color = "#E4EBF2";
-      document.getElementById('ecg-h').style.display = "none";
-    }
-    function change5(){
-      document.getElementById('cardio-bg').style.backgroundImage = "url('tmt.png')";
-      document.getElementById('echo').style.visibility = "hidden";
-      document.getElementById('ecg').style.visibility = "hidden";
-      document.getElementById('dopler').style.visibility = "hidden";
-      document.getElementById('tmt').style.backgroundColor = "transparent";
-      document.getElementById('tmt').style.color = "transparent";
-      document.getElementById('tmt-h').style.display = "block";
-    }
-    function change51(){
-      document.getElementById('cardio-bg').style.backgroundImage = null;
-      document.getElementById('echo').style.visibility = "visible";
-      document.getElementById('ecg').style.visibility = "visible";
-      document.getElementById('dopler').style.visibility = "visible";
-      document.getElementById('tmt').style.backgroundColor = "#656dad";
-      document.getElementById('tmt').style.color = "#E4EBF2";
-      document.getElementById('tmt-h').style.display = "none";
-    }
-    </script>
 </html>
